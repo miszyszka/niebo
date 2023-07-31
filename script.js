@@ -15,7 +15,7 @@ const logo = document.getElementById('logo')
 const bar = document.getElementById('targetElementId')
 
 const hamburger = document.querySelector('.hamburger')
-
+const chevronBTN = document.querySelector('.chevron-btn')
 
 // AREAS
 const areas = document.querySelectorAll('.area')
@@ -327,3 +327,8 @@ hamburger.addEventListener('click', function () {
     hidePage()
 })
 
+
+
+chevronBTN.addEventListener('click', function () {
+  console.log('ad');
+})

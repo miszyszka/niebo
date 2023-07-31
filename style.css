@@ -162,7 +162,7 @@ a {
 .bg-ground {
   background: url('img/bg-ground.png') no-repeat center;
   background-size: cover;
-  transform: translateZ(-600px) translateY(200px) scale(2);
+  transform: translateZ(-600px) translateY(2px) scale(5);
   z-index: 1;
 }
 
