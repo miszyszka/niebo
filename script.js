@@ -87,8 +87,6 @@ function isOnMobile() {
 }
 
 
-
-
 ////////////////////////
 // JUSTYFY BAR
 
@@ -103,7 +101,7 @@ const backJustyfyBAR = function () {
 ////////////////////////
 // LAYERS HOVER
 
-if (!isOnMobile) {
+if (!isOnMobile()) {
   allAreas.forEach(a => {
     a.addEventListener('mouseenter', function () {
       layerName = a.classList[1].slice(5);
@@ -146,51 +144,51 @@ if (!isOnMobile) {
 ////////////////////////////
 // SLIDING TITLE
 
-if (!isOnMobile) {
-  const slidingTitle = function (n) {
-    let name = n
-    if (name === "onas") {
-      name = "o nas"
-    }
 
-    const titleContainer = document.createElement("div");
-    titleContainer.classList.add("titleContainer");
-
-    const titleText = document.createElement("h1");
-    titleText.classList.add("titleText");
-    titleText.textContent = `${name}`;
-
-    titleContainer.appendChild(titleText);
-    // Zlokalizuj element docelowy, w którym chcesz umieścić titleContainer
-    var targetElement = document.getElementById("targetElementId");
-    // Dodaj titleContainer na początek elementu docelowego
-    targetElement.insertBefore(titleContainer, targetElement.firstChild);
-    // Lub dodaj titleContainer na koniec elementu docelowego
-    targetElement.appendChild(titleContainer);
-
-
-    void titleContainer.offsetWidth;
-    titleContainer.style.right = "0";
-
-    //LOGO SHIFTING
-    titleTextElement = titleText
-    titleTextWidth = titleTextElement.offsetWidth
-    logo.style.transform = `translateX(-${(titleTextWidth / 2) + 60}px)`
-    justyfyBAR()
+const slidingTitle = function (n) {
+  let name = n
+  if (name === "onas") {
+    name = "o nas"
   }
 
-  const hideTitle = function () {
-    backJustyfyBAR()
-    const newTitleContainers = document.querySelectorAll(".titleContainer");
-    newTitleContainers.forEach(function (e) {
-      e.style.transition = "right 0.5s";
-      e.style.right = "-100%";
-      setTimeout(function () {
-        e.remove();
-      }, 500);
-    })
-  }
+  const titleContainer = document.createElement("div");
+  titleContainer.classList.add("titleContainer");
+
+  const titleText = document.createElement("h1");
+  titleText.classList.add("titleText");
+  titleText.textContent = `${name}`;
+
+  titleContainer.appendChild(titleText);
+  // Zlokalizuj element docelowy, w którym chcesz umieścić titleContainer
+  var targetElement = document.getElementById("targetElementId");
+  // Dodaj titleContainer na początek elementu docelowego
+  targetElement.insertBefore(titleContainer, targetElement.firstChild);
+  // Lub dodaj titleContainer na koniec elementu docelowego
+  targetElement.appendChild(titleContainer);
+
+
+  void titleContainer.offsetWidth;
+  titleContainer.style.right = "0";
+
+  //LOGO SHIFTING
+  titleTextElement = titleText
+  titleTextWidth = titleTextElement.offsetWidth
+  logo.style.transform = `translateX(-${(titleTextWidth / 2) + 60}px)`
+  justyfyBAR()
 }
+
+const hideTitle = function () {
+  backJustyfyBAR()
+  const newTitleContainers = document.querySelectorAll(".titleContainer");
+  newTitleContainers.forEach(function (e) {
+    e.style.transition = "right 0.5s";
+    e.style.right = "-100%";
+    setTimeout(function () {
+      e.remove();
+    }, 500);
+  })
+}
+
 
 
 

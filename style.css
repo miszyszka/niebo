@@ -272,7 +272,7 @@ a {
 .winnica-screen .image {
   grid-column: 2/2;
   grid-row: 2/4;
-  background: url('img/winnica-ilustracja.png');
+  background: url('img/domek.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -421,7 +421,7 @@ a {
 .wydarzenia-screen .image {
   grid-column: 4/4;
   grid-row: 2/4;
-  background: url('img/vineyard-01.jpg');
+  background: url('img/domek.png');
   background-size: cover;
   background-position: right;
 }
