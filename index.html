@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+    <link rel="stylesheet" href="style-chevron.css" />
+    <script src="jQuery.js"></script>
+    <title>Winnica NIEBO</title>
+  </head>
+
+  <body>
+    <!-- /////////////// -->
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="this.classList.toggle('active')">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100"
+        height="100"
+        viewBox="0 0 200 200"
+      >
+        <g stroke-width="6.5" stroke-linecap="round">
+          <path
+            d="M72 82.286h28.75"
+            fill="#009100"
+            fill-rule="evenodd"
+            stroke="#fff"
+          />
+          <path
+            d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+            fill="none"
+            stroke="#fff"
+          />
+          <path
+            d="M72 125.143h28.75"
+            fill="#009100"
+            fill-rule="evenodd"
+            stroke="#fff"
+          />
+          <path
+            d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+            fill="none"
+            stroke="#fff"
+          />
+          <path
+            d="M100.75 82.286h28.75"
+            fill="#009100"
+            fill-rule="evenodd"
+            stroke="#fff"
+          />
+          <path
+            d="M100.75 125.143h28.75"
+            fill="#009100"
+            fill-rule="evenodd"
+            stroke="#fff"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrapper">
+      <!-- /////////////// -->
+      <!-- MAP -->
+
+      <div class="map-container">
+        <img
+          class="fullscreen-map"
+          src="img/Screenshot.jpg"
+          usemap="#image-map"
+        />
+        <map name="image-map">
+          <area
+            target=""
+            class="area area-onas"
+            title="Onas"
+            href=""
+            coords="19,982,435,1023,635,1113,1031,1142,1223,1148,1266,1279,1583,1532,912,1808,10,1823"
+            shape="poly"
+          />
+          <area
+            target=""
+            class="area area-winnica"
+            title="Winnica"
+            href=""
+            coords="1040,1817,1583,1587,1796,1480,2208,1302,2691,1169,2697,1817"
+            shape="poly"
+          />
+          <area
+            target=""
+            class="area area-browar"
+            title="Browar"
+            href=""
+            coords="1310,1238,1336,1285,1624,1485,1953,1355,2249,1241,2685,1119,2697,491,2438,596,2284,794,1848,948,1604,1049"
+            shape="poly"
+          />
+          <area
+            target=""
+            class="area area-wydarzenia"
+            title="Wydarzenia"
+            href=""
+            coords="1444,907,1566,1038,1836,895,2241,770,2403,573,2697,451,2691,44,1982,238,1601,619"
+            shape="poly"
+          />
+          <area
+            target=""
+            class="area area-domek"
+            title="Domek"
+            href=""
+            coords="673,1049,449,965,-1,924,4,265,1150,805,1304,980,1246,1110"
+            shape="poly"
+          />
+        </map>
+      </div>
+
+      <div id="targetElementId">
+        <img id="logo" src="img/Niebo-logo.png" />
+      </div>
+
+      <!-- /////////////// -->
+      <!-- PARALLAX GROUP -->
+      <div class="spacer"></div>
+
+      <div class="parallax__group niebo-container">
+        <div class="parallax__layer bg-ground"></div>
+        <div class="parallax__layer wydarzenia"></div>
+        <div class="parallax__layer domek"></div>
+        <div class="parallax__layer browar"></div>
+        <div class="parallax__layer onas"></div>
+        <div class="parallax__layer winnica"></div>
+
+        <div class="chevron-container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+
+      <!-- WELCOME SCREEN -->
+      <div class="parallax__group screen welcome-screen">
+        <div class="text-container">
+          <h1>Witaj w niebie<br />na ziemi!</h1>
+          <h3>
+            <span class="bold"><br />Winnica Niebō</span>
+            to nasze miejsce do dzielenia się zachwytem i dobrym czasem z
+            ludźmi<br />
+            w samym sercu Kaszub.<br /><br />
+            Jezioro, dobre wino, rozmowy i radość.<br />
+            <span class="bold">A wszystko w zachwycie nad stworzeniem!</span>
+          </h3>
+        </div>
+        <img class="bottomBG" src="img/welcome-bottom.png" />
+      </div>
+
+      <!-- WINNICA -->
+      <div class="parallax__group screen winnica-screen">
+        <div class="image"></div>
+        <div class="text-container">
+          <h1>WINNICA</h1>
+          <a
+            >Winnica na Kaszubach?<br />
+            Wielu mówiło, że to szalony pomsył.<br />
+            Że nic tu nie wyrośnie i w ogóle...<br />
+            Ale oryginalność to właśnie o my!<br />
+            Przekonaj jak pyszne winogrona mogą rosnąć w&nbsp;naszym
+            klimacie!</a
+          >
+        </div>
+
+        <div class="learnmore-container">
+          <h2 id="learn-more-winnica" onclick="learnMoreWinnica()">
+            DOWIEDZ SIĘ WIĘCEJ
+          </h2>
+          <img
+            onclick="learnMoreWinnica()"
+            id="arrow-winnica"
+            src="ICONS/angles-right-solid-white.png"
+          />
+        </div>
+
+        <img class="bottomBG" src="img/winnica-bottom.png" />
+      </div>
+
+      <!-- BROWAR -->
+      <div class="parallax__group screen browar-screen">
+        <div class="image"></div>
+        <div class="text-container">
+          <h1>BROWAR NIEBō</h1>
+          <a
+            >Krafty, sztosy, najepsze chmiele i lata doświadczenia w
+            poszukiwaniu idealnego piwa.<br /><br />
+            To wszystko w Niebie na ziemi.<br />
+            Wpadaj na browara!</a
+          >
+        </div>
+
+        <div class="learnmore-container">
+          <img
+            onclick="learnMoreBrowar()"
+            id="arrow-browar"
+            src="ICONS/angles-right-solid-black.png"
+          />
+          <h2 id="learn-more-browar" onclick="learnMoreBrowar()">
+            DOWIEDZ SIĘ WIĘCEJ
+          </h2>
+        </div>
+
+        <img class="bottomBG" src="img/browar-bottom.png" />
+      </div>
+
+      <!-- WYDARZENIA -->
+      <div class="parallax__group screen wydarzenia-screen">
+        <div class="image"></div>
+        <div class="text-container">
+          <h1>DOWIEDZ SIĘ CO SŁYCHAĆ</h1>
+          <a>Co nowego?</a>
+        </div>
+      </div>
+
+      <!-- DOMEK -->
+      <div class="parallax__group screen domek-screen">
+        <div class="image"></div>
+        <div class="text-container">
+          <h1>DOMEK</h1>
+          <a>Sekcja o Domku</a>
+        </div>
+      </div>
+
+      <!-- O NAS -->
+      <div class="parallax__group screen onas-screen">
+        <div class="image"></div>
+        <div class="text-container">
+          <h1>JESTEŚMY ASZYKI!</h1>
+          <a>sekcja o nas i kontakt z nami.</a>
+        </div>
+      </div>
+
+      <!-- /////////////// -->
+      <!-- ADDITIONAL SITES -->
+
+      <div class="menu-content">
+        <div class="menuItemDomek"><h1>DOMEK DO WYNAJĘCIA</h1></div>
+        <div class="menuItemWydarzenia"><h1>WYDARZENIA</h1></div>
+        <div class="menuItemWinnica"><h1>WINNICA</h1></div>
+        <div class="menuItemBrowar"><h1>BROWAR</h1></div>
+        <div class="menuItemOnas"><h1>O NAS</h1></div>
+      </div>
+
+      <!-- CLOSE WRAPPER DIV -->
+    </div>
+
+    <!-- TARGET -->
+    <div id="target"></div>
+
+    <!-- /////////////// -->
+    <!-- SCRIPTS -->
+    <script src="jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      $(document).ready(function (e) {
+        $('img[usemap]').rwdImageMaps();
+      });
+    </script>
+  </body>
+</html>

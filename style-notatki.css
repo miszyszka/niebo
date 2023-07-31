@@ -1,0 +1,58 @@
+/* ----------------------- */
+/* ANIMATIONS */
+/* ----------------------- */
+
+/* ----------------------- */
+/* MEDIA */
+/* ----------------------- */
+
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+  }
+}
+
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 3/2) {
+  /* ekran bliski kwadratu */
+  .map-container {
+    height: 95vh;
+    border: solid rgb(255, 64, 0) 20px;
+  }
+  .niebo-container {
+    height: 95vh;
+  }
+}
+
+@media (max-aspect-ratio: 2/3) {
+  /* pionowy ekran */
+  .map-container {
+    height: 60vh;
+    transform: translateY(10%);
+  }
+  .niebo-container {
+    height: 60vh;
+  }
+  .wydarzenia {
+    transform: translateY(-5);
+  }
+}
+
+@media (min-aspect-ratio: 3/2) {
+  /* poziomy ekran */
+  .map-container {
+    height: 130vh;
+    border: solid rgb(221, 0, 255) 20px;
+  }
+  .niebo-container {
+    height: 130vh;
+  }
+  .chevron-container {
+    transform: translateY(-5%);
+  }
+}
