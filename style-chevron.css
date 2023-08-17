@@ -19,6 +19,15 @@
   -webkit-animation: move-chevron 3s ease-out infinite;
   animation: move-chevron 3s ease-out infinite;
 }
+
+.chevron-text {
+  position: absolute;
+  color: var(--basic-white);
+  transition: ease 1s;
+  transform: translateY(0px);
+  opacity: 0;
+  z-index: 100;
+}
 .chevron:first-child {
   -webkit-animation: move-chevron 3s ease-out 1s infinite;
   animation: move-chevron 3s ease-out 1s infinite;

@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-homescreen.css" />
     <link rel="stylesheet" href="hamburger.css" />
     <link rel="stylesheet" href="style-chevron.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="jQuery.js"></script>
     <title>Winnica NIEBO</title>
   </head>
@@ -71,10 +79,20 @@
         <map name="image-map">
           <area
             target=""
+            alt="Chevron"
+            title="Chevron"
+            class="area area-chevron"
+            href=""
+            coords="1426,1450,217"
+            shape="circle"
+          />
+          <area
+            target=""
             class="area area-onas"
+            alt="Onas"
             title="Onas"
             href=""
-            coords="19,982,435,1023,635,1113,1031,1142,1223,1148,1266,1279,1583,1532,912,1808,10,1823"
+            coords="1406,1828,1397,1680,1275,1656,1210,1577,1177,1479,1186,1381,1213,1314,1234,1273,846,1172,523,1091,16,1012,18,1811"
             shape="poly"
           />
           <area
@@ -132,80 +150,92 @@
           <div class="chevron"></div>
           <div class="chevron"></div>
           <div class="chevron"></div>
+          <h2 class="chevron-text">scroll down...</h2>
         </div>
       </div>
 
       <!-- WELCOME SCREEN -->
       <div class="parallax__group screen welcome-screen">
-        <div class="chevron-btn"></div>
-        <div class="text-container">
-          <h1>Witaj w niebie<br />na ziemi!</h1>
-          <h3>
-            <span class="bold"><br />Winnica Niebō</span>
-            to nasze miejsce do dzielenia się zachwytem i dobrym czasem z
-            ludźmi<br />
-            w samym sercu Kaszub.<br /><br />
-            Jezioro, dobre wino, rozmowy i radość.<br />
-            <span class="bold">A wszystko w zachwycie nad stworzeniem!</span>
-          </h3>
+        <div class="flex-container">
+          <div class="chevron-btn"></div>
+          <div class="text-container">
+            <h1>Witaj w niebie na ziemi!</h1>
+            <h3>
+              Winnica Niebō to nasze miejsce do dzielenia się zachwytem i
+              &nbspdobrym czasem z&nbspludźmi w&nbsp;samym sercu Kaszub.
+              Jezioro, dobre wino, rozmowy&nbsp;i&nbsp;radość.<br />
+              <span class="bold"
+                >A&nbsp;wszystko w&nbsp;zachwycie nad stworzeniem!</span
+              >
+            </h3>
+          </div>
+          <img class="bottomBG" src="img/welcom-bg.svg" />
         </div>
-        <img class="bottomBG" src="img/welcome-bottom.png" />
       </div>
 
       <!-- WINNICA -->
       <div class="parallax__group screen winnica-screen">
-        <div class="image"></div>
-        <div class="text-container">
-          <h1>WINNICA</h1>
-          <a
-            >Winnica na Kaszubach?<br />
-            Wielu mówiło, że to szalony pomsył.<br />
-            Że nic tu nie wyrośnie i w ogóle...<br />
-            Ale oryginalność to właśnie o my!<br />
-            Przekonaj jak pyszne winogrona mogą rosnąć w&nbsp;naszym
-            klimacie!</a
-          >
+        <div class="flex-container">
+          <div class="image"></div>
+          <div class="text-container">
+            <h1>WINNICA</h1>
+            <h3>
+              Winnica na Kaszubach?<br />
+              Wielu mówiło, że szalony pomsył, że nic tu nie wyrośnie i&nbsp;w
+              ogóle... Ale oryginalność to właśnie o&nbsp;my! Przekonaj jak
+              pyszne winogrona mogą rosnąć w&nbsp;naszym klimacie!
+            </h3>
+          </div>
+          <div class="right-side">
+            <div class="grape-container">
+              <div id="grape"><img src="img/grape.svg" /></div>
+            </div>
+            <div class="learnmore-container">
+              <h2 id="learn-more-winnica" onclick="learnMoreWinnica()">
+                DOWIEDZ SIĘ WIĘCEJ
+              </h2>
+              <img
+                onclick="learnMoreWinnica()"
+                id="arrow-winnica"
+                src="ICONS/angles-right-solid-white.png"
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="learnmore-container">
-          <h2 id="learn-more-winnica" onclick="learnMoreWinnica()">
-            DOWIEDZ SIĘ WIĘCEJ
-          </h2>
-          <img
-            onclick="learnMoreWinnica()"
-            id="arrow-winnica"
-            src="ICONS/angles-right-solid-white.png"
-          />
-        </div>
-
-        <img class="bottomBG" src="img/winnica-bottom.png" />
+        <!-- <img class="bottomBG" src="img/winnica-bottom.png" /> -->
       </div>
 
       <!-- BROWAR -->
+
       <div class="parallax__group screen browar-screen">
-        <div class="image"></div>
-        <div class="text-container">
-          <h1>BROWAR NIEBō</h1>
-          <a
-            >Krafty, sztosy, najepsze chmiele i lata doświadczenia w
-            poszukiwaniu idealnego piwa.<br /><br />
-            To wszystko w Niebie na ziemi.<br />
-            Wpadaj na browara!</a
-          >
+        <div class="flex-container">
+          <div class="image"></div>
+          <div class="text-container">
+            <h1>BROWAR NIEBō</h1>
+            <h3>
+              Krafty, sztosy, najepsze chmiele i lata doświadczenia w
+              poszukiwaniu idealnego piwa. To wszystko w Niebie na ziemi. Wpadaj
+              na browara!
+            </h3>
+          </div>
+          <div class="right-side">
+            <div class="grape-container">
+              <div id="grape"><img src="img/grape.svg" /></div>
+            </div>
+            <div class="learnmore-container">
+              <h2 id="learn-more-browar" onclick="learnMoreBrowar()">
+                DOWIEDZ SIĘ WIĘCEJ
+              </h2>
+              <img
+                onclick="learnMoreBrowar()"
+                id="arrow-browar"
+                src="ICONS/angles-right-solid-white.png"
+              />
+            </div>
+          </div>
         </div>
-
-        <div class="learnmore-container">
-          <img
-            onclick="learnMoreBrowar()"
-            id="arrow-browar"
-            src="ICONS/angles-right-solid-black.png"
-          />
-          <h2 id="learn-more-browar" onclick="learnMoreBrowar()">
-            DOWIEDZ SIĘ WIĘCEJ
-          </h2>
-        </div>
-
-        <img class="bottomBG" src="img/browar-bottom.png" />
+        <!-- <img class="bottomBG" src="img/winnica-bottom.png" /> -->
       </div>
 
       <!-- WYDARZENIA -->
@@ -213,7 +243,16 @@
         <div class="image"></div>
         <div class="text-container">
           <h1>DOWIEDZ SIĘ CO SŁYCHAĆ</h1>
-          <a>Co nowego?</a>
+          <div class="learnmore-container">
+            <h2 id="learn-more-wydarzenia" onclick="learnMore('wydarzenia')">
+              Co nowego?
+            </h2>
+            <img
+              onclick="learnMore('wydarzenia')"
+              id="arrow-wydarzenia"
+              src="ICONS/angles-right-solid-black.png"
+            />
+          </div>
         </div>
       </div>
 

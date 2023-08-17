@@ -8,6 +8,7 @@ function displayWindowDimensions() {
 // setInterval(displayWindowDimensions, 2000);
 
 // GENERAL
+const spacer = document.querySelector('.spacer')
 const wraper = document.querySelector('.wrapper')
 const parallaxLayers = document.querySelectorAll('.parallax__layer')
 const screens = document.querySelectorAll('.screen')
@@ -16,7 +17,11 @@ const bar = document.getElementById('targetElementId')
 
 const hamburger = document.querySelector('.hamburger')
 const chevronBTN = document.querySelector('.chevron-btn')
+const chevronText = document.querySelector('.chevron-text')
 
+
+
+const weolcomeScreen = document.querySelector('.welcome-screen')
 // AREAS
 const areas = document.querySelectorAll('.area')
 
@@ -54,10 +59,12 @@ parallaxLayers.forEach(g => {
   allGroups.push(g)
 })
 
+
 const allAreas = []
 areas.forEach((area) => {
   allAreas.push(area)
 });
+
 
 const allScreens = []
 screens.forEach((screen) => {
@@ -101,9 +108,11 @@ const backJustyfyBAR = function () {
 ////////////////////////
 // LAYERS HOVER
 
+
 if (!isOnMobile()) {
   allAreas.forEach(a => {
     a.addEventListener('mouseenter', function () {
+
       layerName = a.classList[1].slice(5);
       let choosenArea = `parallax__layer ${layerName}`;
       choosenLayer = allGroups.find(g => g.className === choosenArea);
@@ -111,7 +120,11 @@ if (!isOnMobile()) {
 
       if (layerName === "domek" || layerName === "onas") {
         choosenLayer.style.transform = `${originalTransform.value} translateX(1%)`;
-      } else {
+      } else if (layerName == "chevron") {
+        chevronText.style.opacity = '1'
+        chevronText.style.transform = 'translateY(20px)'
+      }
+      else {
         choosenLayer.style.transform = `${originalTransform.value} translateX(-1%)`;
       }
       slidingTitle(layerName)
@@ -123,6 +136,9 @@ if (!isOnMobile()) {
       logo.style.transform = `translateX(0)`
       if (layerName === "domek" || layerName === "onas") {
         choosenLayer.style.transform = `${originalTransform.value} translateX(-1%)`;
+      } else if (layerName == "chevron") {
+        chevronText.style.opacity = '0'
+        chevronText.style.transform = 'translateY(0px)'
       } else {
         choosenLayer.style.transform = `${originalTransform.value} translateX(1%)`;
       }
@@ -133,10 +149,13 @@ if (!isOnMobile()) {
       e.preventDefault()
       let choosenScreen = `parallax__group screen ${layerName}-screen`;
       let screenDiv = allScreens.find(s => s.className === choosenScreen);
-
-      screenDiv.scrollIntoView({ behavior: 'smooth' });
-      hideTitle()
-      logo.style.transform = `translateX(0)`
+      if (layerName == "chevron") {
+        weolcomeScreen.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        screenDiv.scrollIntoView({ behavior: 'smooth' });
+        hideTitle()
+        logo.style.transform = `translateX(0)`
+      }
     })
   });
 }
@@ -150,6 +169,11 @@ const slidingTitle = function (n) {
   if (name === "onas") {
     name = "o nas"
   }
+
+  if (name === 'chevron') {
+    return
+  }
+
 
   const titleContainer = document.createElement("div");
   titleContainer.classList.add("titleContainer");
@@ -257,6 +281,38 @@ function learnMoreBrowar() {
 }
 
 /////////////////////////////////////////
+// LEARN MORE
+function learnMore(subject) {
+  const newPageContainer = document.createElement("div");
+  newPageContainer.classList.add("new-page-container");
+
+  const newPageContent = document.createElement("div");
+  newPageContent.classList.add("learnMoreBrowar-content");
+
+  const exitBTN = document.createElement("h1");
+  exitBTN.classList.add("learnMoreBrowar-extitBTN");
+  exitBTN.textContent = "X";
+
+  const newPageText = document.createElement("h1");
+  newPageText.textContent = "tu będzie szczegółowa treść";
+
+  newPageContainer.appendChild(exitBTN);
+  newPageContent.appendChild(newPageText);
+
+
+  newPageContainer.appendChild(newPageContent);
+  document.body.appendChild(newPageContainer);
+
+  void newPageContainer.offsetWidth;
+  newPageContainer.style.right = "0";
+
+  exitBTN.addEventListener('click', function () {
+    hidePage()
+  })
+}
+
+
+/////////////////////////////////////////
 // Hide Page function
 function hidePage() {
   const newPageContainer = document.querySelector(".new-page-container");
@@ -316,9 +372,6 @@ function createMenu() {
 
 
 
-
-
-
 hamburger.addEventListener('click', function () {
   console.log('clicked');
   if (hamburger.classList.contains('active')) {
@@ -328,7 +381,3 @@ hamburger.addEventListener('click', function () {
 })
 
 
-
-chevronBTN.addEventListener('click', function () {
-  console.log('ad');
-})
