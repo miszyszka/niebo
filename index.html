@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style-homescreen.css" />
     <link rel="stylesheet" href="hamburger.css" />
     <link rel="stylesheet" href="style-chevron.css" />
+    <link rel="stylesheet" href="carousell.css" />
     <link
       rel="icon"
       type="image/png"
@@ -191,11 +192,11 @@
               <div id="grape"><img src="img/grape.svg" /></div>
             </div>
             <div class="learnmore-container">
-              <h2 id="learn-more-winnica" onclick="learnMoreWinnica()">
+              <h2 id="learn-more-winnica" onclick="learnMore('winnica')">
                 DOWIEDZ SIĘ WIĘCEJ
               </h2>
               <img
-                onclick="learnMoreWinnica()"
+                onclick="learnMore('winnica')"
                 id="arrow-winnica"
                 src="ICONS/angles-right-solid-white.png"
               />
@@ -221,14 +222,14 @@
           </div>
           <div class="right-side">
             <div class="grape-container">
-              <div id="grape"><img src="img/grape.svg" /></div>
+              <div id="beer"><img src="svg/beer.svg" /></div>
             </div>
             <div class="learnmore-container">
-              <h2 id="learn-more-browar" onclick="learnMoreBrowar()">
+              <h2 id="learn-more-browar" onclick="learnMore('browar')">
                 DOWIEDZ SIĘ WIĘCEJ
               </h2>
               <img
-                onclick="learnMoreBrowar()"
+                onclick="learnMore('browar')"
                 id="arrow-browar"
                 src="ICONS/angles-right-solid-white.png"
               />
@@ -240,37 +241,69 @@
 
       <!-- WYDARZENIA -->
       <div class="parallax__group screen wydarzenia-screen">
-        <div class="image"></div>
-        <div class="text-container">
-          <h1>DOWIEDZ SIĘ CO SŁYCHAĆ</h1>
-          <div class="learnmore-container">
-            <h2 id="learn-more-wydarzenia" onclick="learnMore('wydarzenia')">
-              Co nowego?
-            </h2>
-            <img
-              onclick="learnMore('wydarzenia')"
-              id="arrow-wydarzenia"
-              src="ICONS/angles-right-solid-black.png"
-            />
+        <div class="flex-container">
+          <div class="image"></div>
+          <div class="text-container">
+            <h1>DOWIEDZ SIĘ CO SŁYCHAĆ</h1>
+            <div class="learnmore-container">
+              <h2
+                id="learn-more-wydarzenia"
+                onclick="window.open('https://www.facebook.com/Aszyki/?locale=pl_PL', '_blank')"
+              >
+                Co nowego?
+              </h2>
+              <img
+                onclick="window.open('https://www.facebook.com/Aszyki/?locale=pl_PL', '_blank')"
+                id="arrow-wydarzenia"
+                src="ICONS/angles-right-solid-black.png"
+                alt="Strzałka w prawo"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <!-- DOMEK -->
       <div class="parallax__group screen domek-screen">
-        <div class="image"></div>
-        <div class="text-container">
-          <h1>DOMEK</h1>
-          <a>Sekcja o Domku</a>
+        <div class="flex-container">
+          <div class="image"></div>
+          <div class="text-container">
+            <h1>DOMEK NIEBō</h1>
+            <h3>
+              Krafty, sztosy, najepsze chmiele i lata doświadczenia w
+              poszukiwaniu idealnego piwa. To wszystko w Niebie na ziemi. Wpadaj
+              na browara!
+            </h3>
+          </div>
+          <div class="right-side">
+            <div class="d-container">
+              <div>
+                <img id="domek-homepage" src="photos/domek-web-8.jpg" />
+              </div>
+            </div>
+            <div class="learnmore-container">
+              <h2 id="learn-more-browar" onclick="learnMore('domek')">
+                DOWIEDZ SIĘ WIĘCEJ
+              </h2>
+              <img
+                onclick="learnMore('domek')"
+                id="arrow-browar"
+                src="ICONS/angles-right-solid-white.png"
+              />
+            </div>
+          </div>
         </div>
+        <!-- <img class="bottomBG" src="img/winnica-bottom.png" /> -->
       </div>
 
       <!-- O NAS -->
       <div class="parallax__group screen onas-screen">
-        <div class="image"></div>
-        <div class="text-container">
-          <h1>JESTEŚMY ASZYKI!</h1>
-          <a>sekcja o nas i kontakt z nami.</a>
+        <div class="flex-container">
+          <div class="image"></div>
+          <div class="text-container">
+            <h1>JESTEŚMY ASZYKI!</h1>
+            <a>sekcja o nas i kontakt z nami.</a>
+          </div>
         </div>
       </div>
 
@@ -287,11 +320,12 @@
     <!-- SCRIPTS -->
     <script src="jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js"></script>
     <script src="script.js"></script>
-
+    
     <script>
       $(document).ready(function (e) {
         $('img[usemap]').rwdImageMaps();
       });
     </script>
+
   </body>
 </html>
