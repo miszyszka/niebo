@@ -99,12 +99,12 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  border: red 2px solid;
+  /* border: red 2px solid; */
 }
 
 .text-container {
   padding: 60px 80px;
-  border: rgb(36, 210, 21) 1px solid;
+  /* border: rgb(36, 210, 21) 1px solid; */
   height: 100%;
   width: 50%;
   display: flex;
@@ -314,7 +314,7 @@ a {
 }
 
 .wydarzenia-screen .learnmore-container {
-  border: rgb(202, 202, 202) 1px solid;
+  /* border: rgb(202, 202, 202) 1px solid; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -380,7 +380,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: rgb(202, 202, 202) 1px solid;
+  /* border: rgb(202, 202, 202) 1px solid; */
 }
 
 #domek-homepage {
