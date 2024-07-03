@@ -102,6 +102,16 @@ a {
   /* border: red 2px solid; */
 }
 
+.main-text-container {
+  padding: 60px 80px;
+  /* border: rgb(36, 210, 21) 1px solid; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+}
+
 .text-container {
   padding: 60px 80px;
   /* border: rgb(36, 210, 21) 1px solid; */
@@ -148,7 +158,6 @@ a {
 .welcome-screen .text-container {
   display: flex;
   justify-content: start;
-  width: 80%;
 }
 
 /* ----------------------- */
