@@ -24,52 +24,214 @@ const wydarzeniaAdditionalSite = `
 </div>
 `;
 
-const domekAdditionalSite = `
-  <h1 class="exitBTN">X</h1>
-  <div class="learn-more-content domekAdditionalSite">
-    <h1>Wynajmij nasz domek</h1>
-    <h2 class="domek-opis">Cisza, spokój, las i jezioro. Idealne miejsce na odpoczynek.</h2>
-    <div class="c-wrapper">
-      <i id="left" class="fa-solid fa-angle-left"><</i>
-      <div class="carousel">
-        <img src="domek-img/domek-web-8.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-4.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-9.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-5.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-2.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-6.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-7.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-3.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-1.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-10.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-11.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-12.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-13.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-14.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-15.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-16.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-17.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-18.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-19.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-20.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-21.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-22.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-23.jpg" alt="img" draggable="false" />
-        <img src="domek-img/domek-web-24.jpg" alt="img" draggable="false" />
-      </div>
-      <i id="right" class="fa-solid fa-angle-right">></i>
-    </div>
+const festAdditionalSite = `
+<div class="new padding40">
+<h1 class="exitBTN">X</h1>
 
-    <h3 class="domek-opis">Domek Niebò to świeżo wyremontowany stary domek z bali, który dostał nową duszę i&nbsp;służy do wypoczynku i&nbsp;do ukochania natury dookoła. 
-    Jest położony na górce, z&nbsp;której można zejść bezpośrednio do jeziora - ok 30&nbsp;m.</br></br>
-    W domu znajdują się 3 sypialnie - jedna na parterze z podwójnym łóżkiem i miejscem do czytania; dwie pozostałe na górnym piętrze pod skosami -&nbsp;w&nbsp;jednej położony jest naturalny materac futon, otoczony poduszkami dla maks. 4 osób, a w drugiej dwa pojedyncze łóżka. 
-    Na parterze mieści się również salon z dwie kanapami (w tym jedna rozkładana) i&nbsp;z&nbsp;hamakiem do&nbsp;siadania. Stąd rozpościera się widok na taras i&nbsp;piękne jezioro Mezowskie.
-    Na dolnym piętrze znajduje się w&nbsp;pełni wyposażona kuchnia ze stołem dla 6-ściu osób oraz łazienka z&nbsp;prysznicem.
-    Każdy gość otrzymuje poczęstunek z&nbsp;rzemieślniczego piwa naszej roboty i lokalnych produktów.</br>
-    Zapraszamy do położonej obok domku gorącej beczki (balii).</br></br>
-    Oglądanie zachodów słońca na plaży przy domku stało się naszą ulgą po zapracowanym dniu i pasją.</h3>
-    <button class="zarezerwuj-btn" onclick="window.location.href = 'https://https://panel.hotres.pl/v4_step1?oid=3522&lang=pl&rid=21634&clear=1'">Zarezerwuj teraz</button>
+
+
+<h1>Niebo Fest 2024</h1>
+
+<h2>Niebò Fest</h2>
+<p>
+  To nasze najważniejsze wydarzenie w roku. W środku wakacji organizujemy niebiański weekend z warsztatami, muzyką i modlitwą. Nie brakuje konferencji i możliwości rozwoju osobistego oraz oczywiście - czasu na odpoczynek - na leżaczku, przy winnicy i kojących wodach Jeziora Mezowskiego. Tworzymy luźną i przyjacielską atmosferę, w której odpoczywamy i rozwijamy się.
+</p>
+
+<h2>Warsztaty</h2>
+<p>
+  Warsztaty prowadzone są przez fachowców z różnych dziedzin, takich jak: teatr, muzyka, sport, rękodzieło, piwowarstwo, winiarstwo, ekologia, ogrodnictwo, relacje, pierwsza pomoc. Do tego namioty i pyszne zdrowe jedzonko.
+</p>
+
+<h2>Plan</h2>
+<p>
+  W tym roku Festiwal trwać będzie aż 4 dni. Planujemy moc atrakcji w czillowym klimacie.
+</p>
+<p>
+  <strong>Termin:</strong> 1-4.08.2024
+</p>
+<p>
+  <strong>Miejsce:</strong> Winnica Niebò, Mezowo k/Kartuz, Kaszuby
+</p>
+
+<h2>Koszty</h2>
+<p>
+  <strong>Karnet na festiwal:</strong><br />
+  Cena do 15.06: 200 zł<br />
+  Cena od 16.06 do 25.07: 250 zł
+</p>
+<p>
+  <strong>Wyżywienie:</strong><br />
+  190 zł (obejmuje śniadania, obiady i kolacje)
+</p>
+<p>
+  Nocujemy na miejscu na polu namiotowym za darmo. Jeśli nie masz namiotu albo czegoś Ci brakuje - napisz w uwagach, pomożemy :) Jeśli nie możesz spać w namiocie, doradzimy w sprawie noclegu w okolicy.
+</p>
+
+<h2>Plan wydarzeń</h2>
+<p>
+  - zaczynamy w czwartek 1.08 wieczorem <br />
+  - w piątek, sobotę i niedzielę trzy pełne dni po 3 tury warsztatów <br />
+  - codzienne pyszne śniadanka, obiady i kolacje serwowane przez Kasię i Koło Gospodyń Wiejskich "Mezowszcze Karno" <br />
+  - kąpanko w jeziorze lub grzanie w gorącej beczce <br />
+  - msza św. i modlitwy nad jeziorem <br />
+  - wieczorkami koncert, chill-out itp.
+</p>
+
+<h2>Zapisz się</h2>
+<p>
+  <a href="https://forms.gle/snCP8hRMqb1Grp8f9" target="_blank">Zapisz się tutaj</a><br />
+  Prosimy o osobne uzupełnianie formularza przez każdego dorosłego.
+</p>
+<p>
+  Dzieci mile widziane! Prosimy o wpisanie dzieci przy jednym rodzicu.
+</p>
+<p>
+  <strong>Ceny dla dzieci (karnet i wyżywienie):</strong><br />
+  do 6 lat za darmo<br />
+  7-14 lat połowa ceny
+</p>
+<p>10% zniżki dla studenta</p>
+
+<h2>Dojazd</h2>
+<p>
+  Winnica NIEBÒ znajduje się w miejscowości Mezowo na Kaszubach. Możliwy dojazd:
+</p>
+<p>
+  - komunikacją publiczną z Gdańska: <br />
+    - z Gdańska kolejką PKM (kier. Kartuzy) do stacji Dzierżążno <br />
+    - 800 m piechotą do Nieba drogą wzdłuż jeziora. <br />
+  - samochodem - pół godziny jazdy z Trójmiasta
+</p>
+
+<p>
+  Po wypełnieniu formularza wyślemy Ci wiadomość zwrotną na maila ze szczegółami dot. płatności (daj nam na do 7 dni - pracujemy w bardzo kameralnym składzie)
+</p>
+
+<p>
+  <a href="https://forms.gle/snCP8hRMqb1Grp8f9" target="_blank">Zapisz się tutaj</a>
+</p>
+
+
+
+
+
+
+</div>
+
+`;
+
+const domekAdditionalSite = `
+<h1 class="exitBTN">X</h1>
+<div class="learn-more-content domekAdditionalSite">
+
+  <h2 class="domek-opis">
+    Cisza, spokój, las i jezioro. Idealne miejsce na odpoczynek. Wiejski
+    dom świeżo urządzony w starym kaszubskim stylu. Nasz pradziadek Antoni
+    był kierownikiem tutejszej szkoły jeszcze przed wojną, którą cudem
+    przetrwał. Na stare lata zdecydował się stworzyć nad jeziorem miejsce
+    marzeń dla swojej rodziny.
+  </h2>
+  <div class="c-wrapper">
+    <i id="left" class="fa-solid fa-angle-left"><</i>
+    <div class="carousel">
+      <img src="domek-img/domek-web-8.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-4.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-9.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-5.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-2.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-6.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-7.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-3.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-1.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-10.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-11.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-12.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-13.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-14.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-15.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-16.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-17.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-18.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-19.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-20.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-21.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-22.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-23.jpg" alt="img" draggable="false" />
+      <img src="domek-img/domek-web-24.jpg" alt="img" draggable="false" />
+    </div>
+    <i id="right" class="fa-solid fa-angle-right">></i>
   </div>
+
+  <h1>Dom Antoniego</h1>
+
+  <h3 class="domek-opis">
+    Ma on dwie klimatyczne sypialnie z łóżkami podwójnymi, z drewnianymi
+    podłogami i sufitami i starym piecem kaflowym. W pełni wyposażona
+    kuchnia z ceglaną podłogą oraz łazienka z dodatkową toaletą. Dom
+    posiada ogrzewanie i klimatyzację. Przyjmie max. 5 osób. Położony nad
+    samym jeziorem, które można podziwiać z tarasu otoczonego drzewami i
+    pięknym dużym trawnikiem. Każdy gość otrzymuje poczęstunek z
+    rzemieślniczego piwa naszej roboty i lokalnych produktów.. Zapraszamy
+    również do wynajmowania do gorącej beczki (balii).
+  </h3>
+
+  <h1>Dom bez zasięgu</h1>
+
+  <h3 class="domek-opis">
+    Ma on dwie klimatyczne sypialnie z łóżkami podwójnymi, z drewnianymi
+    podłogami i sufitami i starym piecem kaflowym. W pełni wyposażona
+    kuchnia z ceglaną podłogą oraz łazienka z dodatkową toaletą. Dom
+    posiada ogrzewanie i klimatyzację. Przyjmie max. 5 osób. Położony nad
+    samym jeziorem, które można podziwiać z tarasu otoczonego drzewami i
+    pięknym dużym trawnikiem. Każdy gość otrzymuje poczęstunek z
+    rzemieślniczego piwa naszej roboty i lokalnych produktów.. Zapraszamy
+    również do wynajmowania do gorącej beczki (balii).
+  </h3>
+
+  <h1>Idea</h1>
+
+  <h3 class="domek-opis">
+    Chcemy, żeby każdy kto do nas przyjeżdża mógł doświadczyć odrobiny
+    zachwytu nad tym, jak pięknie stworzony jest świat. Zachwycamy się
+    pięknem przyrody, człowiekiem i prawami nauki, bo wierzymy, że cały
+    stworzony świat jest przejawem geniuszu Stwórcy. Jako przedstawiciele
+    różnych zawodów i gałęzi nauki w wielu dziedzinach zgłębiamy i
+    kontemplujemy cud Stworzenia i zastanawiamy się “dlaczego?”. Nasz
+    zachwyt opieramy na filozofii chrześcijańskiej i nauczaniu papieża
+    Franciszka - np. encykliki Laudato si’ (link
+    https://www.vatican.va/content/francesco/pl/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.pdf
+    ). Z niej wychodzą również nasze działania w ramach ekologii
+    integralnej, która wyraża szacunek do całego stworzenia, w tym
+    człowieka. Jesteśmy również na szlaku Camino de Santiago - legendarnej
+    pielgrzymiej drodze do Santiago de Compostela - grobu św. Jakuba w
+    Hiszpanii. Dla wszystkich pielgrzymów, którzy okażą paszport
+    pielgrzyma oferujemy 20% zniżki na nocowanie, a w miarę możliwości
+    darmowe noclegi. .
+  </h3>
+
+
+
+
+  <div class="learnmore-container padding40">
+  <h2
+    id="learn-more-wydarzenia"
+    onclick="window.open('https://booking.hotres.pl/v4_step1?oid=3522&lang=pl&arrival=2024-07-18&departure=2024-07-19&sid=svaa03jb3bobqebuleo2c68quo?ref=panel.hotres.pl', '_blank')"
+  >
+    Zarezerwuj teraz!
+  </h2>
+
+  <img
+    onclick="window.open('https://booking.hotres.pl/v4_step1?oid=3522&lang=pl&arrival=2024-07-18&departure=2024-07-19&sid=svaa03jb3bobqebuleo2c68quo?ref=panel.hotres.pl', '_blank')"
+    id="arrow-wydarzenia"
+    src="ICONS/angles-right-solid-black.png"
+    alt="Strzałka w prawo"
+  />
+</div>
+
+
+
+</div>
+
 `;
 
 // GENERAL

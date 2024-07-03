@@ -45,6 +45,7 @@ body {
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 70px;
+  padding: 10px 0px;
 }
 
 /* TEKST UZUPEŁNIAJACY DO SEKCJI */
@@ -65,6 +66,7 @@ a {
   font-weight: 300;
   text-decoration: none;
   color: #fff;
+  font-size: 8px;
 }
 
 * {
@@ -79,6 +81,10 @@ a {
 
 .display-none {
   display: none;
+}
+
+.padding40{
+  padding: 40px;
 }
 
 /* ----------------------- */
@@ -106,6 +112,7 @@ a {
   padding: 60px 80px;
   /* border: rgb(36, 210, 21) 1px solid; */
   height: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -137,9 +144,12 @@ a {
 
 /* WELCOME SCREEN */
 
+
+
 .welcome-screen {
   background: var(--basic-white);
   color: #000;
+  height: 700px;
 }
 
 .welcome-screen .bottomBG {
@@ -190,6 +200,7 @@ a {
 }
 
 .grape-container {
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -331,19 +342,23 @@ a {
   height: 150px;
 }
 
-#learn-more-wydarzenia:hover + #arrow-wydarzenia {
+#learn-more-wydarzenia:hover + #arrow-wydarzenia,
+#learn-more-fest:hover + #arrow-fest {
   transform: translateX(20px);
 }
 
-#learn-more-wydarzenia:hover {
+#learn-more-wydarzenia:hover,
+#learn-more-fest:hover {
   cursor: pointer;
 }
 
-#learn-more-wydarzenia {
+#learn-more-wydarzenia,
+#learn-more-fest {
   color: var(--basic-black);
 }
 
-#arrow-wydarzenia {
+#arrow-wydarzenia,
+#arrow-fest {
   width: 60px;
   height: 55px;
   z-index: 2;
@@ -351,7 +366,8 @@ a {
   transform: translateX(10px);
 }
 
-#arrow-wydarzenia:hover {
+#arrow-wydarzenia:hover,
+#arrow-fest:hover {
   cursor: pointer;
   transform: translateX(20px);
 }
@@ -369,6 +385,8 @@ a {
 }
 
 .domek-screen .right-side {
+  transform: translateX(-10%);
+  padding: 10%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -376,12 +394,18 @@ a {
 }
 
 .domek-screen .text-container h1,
-.domek-screen .text-container h3 {
+.domek-screen .text-container h2,
+.domek-screen .text-container h3
+.d-container h1,
+.d-container h2,
+.d-container h3{
+  padding: 20px 0px 20px;
   text-align: left;
   color: var(--basic-white);
 }
 
-.domek-screen h1 {
+.domek-screen h1
+.domek-screen h3 {
   color: var(--basic-white);
 }
 
@@ -393,17 +417,20 @@ a {
 }
 
 #domek-homepage {
-  width: 400px;
-  height: 300px;
-  padding: 10px 40px 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(22%);
+  width: 80%;
 }
 
 .domek-screen .learnmore-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding-right: 40px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -456,6 +483,7 @@ a {
 
 .menu-content,
 .learn-more-content {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: left;

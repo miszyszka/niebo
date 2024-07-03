@@ -214,7 +214,7 @@
 
       <!-- BROWAR -->
 
-      <div class="parallax__group screen browar-screen">
+      <!-- <div class="parallax__group screen browar-screen">
         <div class="flex-container">
           <div class="image"></div>
           <div class="text-container">
@@ -241,8 +241,7 @@
             </div>
           </div>
         </div>
-        <!-- <img class="bottomBG" src="img/winnica-bottom.png" /> -->
-      </div>
+      </div> -->
 
       <!-- WYDARZENIA -->
       <div class="parallax__group screen wydarzenia-screen">
@@ -255,13 +254,24 @@
                 id="learn-more-wydarzenia"
                 onclick="window.open('https://www.facebook.com/Aszyki/?locale=pl_PL', '_blank')"
               >
-                Co nowego?
+                zajrzyj na naszego facebooka
               </h2>
+
               <img
                 onclick="window.open('https://www.facebook.com/Aszyki/?locale=pl_PL', '_blank')"
                 id="arrow-wydarzenia"
                 src="ICONS/angles-right-solid-black.png"
                 alt="Strzałka w prawo"
+              />
+            </div>
+            <div class="learnmore-container">
+              <h2 id="learn-more-fest" onclick="learnMore('fest')">
+                NIEBō fest 2024
+              </h2>
+              <img
+                onclick="learnMore('fest')"
+                id="arrow-fest"
+                src="ICONS/angles-right-solid-black.png"
               />
             </div>
           </div>
@@ -273,22 +283,23 @@
         <div class="flex-container">
           <div class="image"></div>
           <div class="text-container">
-            <h1>DOMEK NIEBō</h1>
-            <h3>
-              Krafty, sztosy, najepsze chmiele i lata doświadczenia w
-              poszukiwaniu idealnego piwa. To wszystko w Niebie na ziemi. Wpadaj
-              na browara!
-            </h3>
+            <div>
+              <img id="domek-homepage" src="img/domek.png" />
+            </div>
           </div>
           <div class="right-side">
             <div class="d-container">
-              <div>
-                <img id="domek-homepage" src="photos/domek-web-8.jpg" />
-              </div>
+              <h1>NOCLEGI</h1>
+              <h2>
+                Dom św Antoniego <br />
+                oraz <br />
+                Dom bez zasięgu
+              </h2>
+              <h3>Poznaj naszą ofertę noclegową domków na wynajem.</h3>
             </div>
             <div class="learnmore-container">
               <h2 id="learn-more-browar" onclick="learnMore('domek')">
-                DOWIEDZ SIĘ WIĘCEJ
+                WYNAJMIJ DOMEK
               </h2>
               <img
                 onclick="learnMore('domek')"
@@ -305,21 +316,83 @@
       <div class="parallax__group screen onas-screen">
         <div class="flex-container">
           <div class="image"></div>
-          <div class="text-container">
-            <h1>JESTEŚMY ASZYKI!</h1>
-            <a>sekcja o nas i kontakt z nami.</a>
+          <div class="main-text-container">
+            <h1>O NAS</h1>
+            <h3>
+              <strong>Arek Aszyk</strong> - prawnuk Antoniego Aszyka,
+              pomysłodawca i stworzyciel Winnicy Niebò w Mezowie, gospodarz
+              Niebò Fest, sommelier WSET2. Człowiek orkiestra: z wykształcenia
+              lekarz i teolog, z zawodu przedsiębiorca, z pasji wodniak, vloger
+              (RIP) i "działacz". Pięć lat temu wymyślił winnicę w Mezowie, a
+              dziś na stoku rośnie 600 krzewów, choć po tegorocznych
+              przymrozkach mają się różnie. Prywatnie mąż Kasi i ojciec trzech
+              synów.<br><br>
+
+              <strong>Kasia Aszyk</strong> - współstworzycielka Winnicy Niebò w
+              Mezowie, dobra dusza naszej winnicy. Z zawodu psycholog oraz
+              trenerka kompetencji, która zaraża radością i pięknem każdego, z
+              kim rozmawia. Dba o wystrój naszego miejsca i dobre samopoczucie
+              wszystkich obecnych. Doskonale śpiewa i gotuje. Mieszka w domu z
+              czterema facetami, ale na szczęście ich lubi.<br><br>
+
+              <strong>Kuba Kruszyński</strong> - prawie doktor nauk chemicznych,
+              który od 12 roku życia produkuje wino. Jego marzenie o własnej
+              winnicy stało się rzeczywistością i od tego czasu każdą wolną
+              chwilę spędza w Mezowie z sekatorem lub kielnią w ręku. Jak na
+              Kaszuba przystało lubi tabaczyć, a kiedy nikt nie patrzy wzrusza
+              się słuchając szlagierów z winyli. Zawodowo jest specjalistą od
+              polimerów, nad którymi znęcał się w laboratoriach m.in. w kraju
+              zwanym niegdyś Holandią. W weekendy rozkręca imprezy jako DJ.
+              Prywatnie mąż jednej żony o imieniu Nell.<br><br>
+
+              <strong>Łukasz Bugaj</strong> - sommelier WSET2, domowy piwowar od
+              10 lat, uwarzył ponad 100 piw. Współstworzyciel Browaru Niebò w
+              Mezowie. Ogromny entuzjasta smaków i zapachów, nie tylko w piwie,
+              ale również w jedzeniu i w winie, regularny uczestnik degustacji.
+              Jego pasją jest gotowanie, w którym słynie z bycia nazistą w
+              trzymaniu się przepisu. Na pizze neapolitanę u niego poczekasz
+              minimum dwa dni, a jeśli Cię lubi to trzy. Zawodowo jest lekarzem,
+              co nie przeszkadza mu w produkcji alkoholu. Prywatnie mąż Asi i
+              ojciec dwójki dzieci.<br><br>
+
+              <strong>Wiktor Gajewski</strong> - piwowar od 10 lat, autor ponad
+              100 warek. Współstworzyciel Browaru Niebò w Mezowie. Lubi warzyć
+              piwa albo proste, albo ekstrawaganckie. W kwestii piw prostych
+              sprawa jest prosta – te dobre lubią wszyscy. Te drugie na ogół
+              smakują tylko jemu samemu, bo mało kto poszukuje w piwie zapachu
+              palonych kabli lub aromatu stajni. Zawodowo inżynier budownictwa z
+              zamiłowaniem do rozwiązywania spraw skomplikowanych oraz ratowania
+              rozpadających się projektów (ponoć nie dlatego jest w naszej
+              ekipie :) Interesuje się wszystkim co jest mu ciężko zrozumieć,
+              idzie przez życie żwawym, acz flegmatycznym krokiem. Prywatnie mąż
+              Kingi.<br><br>
+
+              <strong>Michał Szyszka</strong> - grafik 2D i 3D, fotograf i
+              filmowiec. Studiował na Akademii Sztuk Pięknych w Gdańsku.
+              Człowiek, który wpatruje się w świat z wielką ciekawością i
+              obdarza go swoim spokojem. W aspekcie wizualnych sztuk w świecie
+              elektroniki nie ma dla niego rzeczy niemożliwych. Ostatnio
+              powrócił do swojej wielkiej pasji jaką jest malarstwo. Uwielbia
+              sporty, również takie, które zna tylko on, np. disc golf. Dzięki
+              temu nie ma sobie równych. Z żoną Justyną i Aszykami stworzył film
+              “Jeden Oddech”.<br><br>
+
+              <strong>Kuba Ulasiński</strong><br><br>
+
+              <strong>Angelika Sławińska</strong> - dba o czystość i porządek w
+              naszym grajdołku. Kobieta o wielkim sercu, która nie boi się
+              nowych wyzwań i zawsze podchodzi do życia z optymizmem. Jako
+              pochodząca z Mezowa wprowadza do naszych kaszubskich checzy
+              jeszcze więcej lokalności i ciepła. Uprzyjemnia sobie wieczory
+              ciekawostkami historycznymi i słucha muzyki starszej od jej
+              rodziców. Lubi robić coś z niczego.<br><br>
+            </h3>
           </div>
         </div>
       </div>
 
       <!-- /////////////// -->
       <!-- ADDITIONAL SITES -->
-
-      <div class="new">
-        <h1 class="exitBTN">X</h1>
-        <h1>hello world</h1>
-        <h2>it is working</h2>
-      </div>
 
       <!-- CLOSE WRAPPER DIV -->
     </div>
